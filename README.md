@@ -1,7 +1,7 @@
 ## Using Technologies
 - Reactjs
 - Redux Toolkit
-- Tailwind Css
+- Tailwind CSS
 - Fetch from API
 
 ## Images From Application
