@@ -13,7 +13,7 @@ const Category = ({setCategory, category}) => {
     dispatch(getCategories());
   },[dispatch])
   return (
-    <div className='w-1/6 bg-gray-100'>
+    <div className='lg:w-1/6 w-full bg-gray-100'>
         <ul>
           <li className='font-bold p-2 text-xl text-center border-b mx-4'>KATEGORİ</li>
           {categories.map((item,i) => (

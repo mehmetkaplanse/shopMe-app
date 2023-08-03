@@ -13,7 +13,7 @@ const Favorite = () => {
   if (!favorites || favorites.length === 0) {
     return (
       <div className='mt-10 min-h-screen'>
-        <div className='text-5xl font-extralight my-10 border-b text-center'>
+        <div className='text-5xl font-extralight my-10 text-center'>
           Favori Ürünlerim
         </div>
         <div className='text-xl text-gray-500 text-center font-semibold'>
@@ -24,11 +24,11 @@ const Favorite = () => {
   }
 
   return (
-    <div className='mt-10 min-h-screen'>
-      <div className='text-5xl font-extralight my-10 border-b border-gray-300 text-center'>
+    <div className='my-10 min-h-screen'>
+      <div className='lg:text-5xl text-4xl font-extralight my-10 border-gray-300 text-center'>
         Favori Ürünlerim
       </div>
-      <div className='grid grid-cols-4 w-full gap-8'>
+      <div className='grid lg:grid-cols-4 sm:grid-cols-2 grid-cols-1 w-full lg:gap-8 gap-4'>
         {favorites?.map((item) => (
           <div key={item.id} className='border border-gray-300 h-80 rounded-2xl p-4 relative'>
             <div className='bg-black p-2 rounded-2xl text-white inline-block 

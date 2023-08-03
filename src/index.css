@@ -12,7 +12,7 @@ body {
 
 
 .paginate {
-    @apply flex justify-end items-center my-6
+    @apply flex lg:justify-end justify-center items-center my-6
 }
 
 .paginate li {

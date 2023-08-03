@@ -33,11 +33,11 @@ const Products = ({category, sort}) => {
   },[dispatch, category])
 
   return (
-    <div className='ml-6 w-full'>
+    <div className='lg:ml-6 w-full'>
       {
         productsStatus === "LOADING" ? <Loading /> :
         <>
-        <div className='grid grid-cols-3 gap-4'>
+        <div className='grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 gap-4'>
           {
             currentItems?.sort((a,b) => sort == "inc" ? a.price-b.price : sort == "dec" ? b.price-a.price : null)
             .map((product,i) => (

@@ -28,6 +28,7 @@ const DetailComp = ({productDetail}) => {
       dispatch(addToFavorite(item));
       toast.success("Ürün favorilere eklendi.");
     } else {
+      dispatch(removeFromFavorites(item.id))
       setFavorited(false);
     }
   };
@@ -46,11 +47,11 @@ const DetailComp = ({productDetail}) => {
   }
 
   return (
-    <div className='my-10 flex gap-10 border rounded-3xl p-20'>
-      <div className='w-1/2 h-[500px] p-10'>
+    <div className='my-10 flex lg:flex-row flex-col lg:gap-10 border rounded-3xl lg:p-20 p-4'>
+      <div className='lg:w-1/2 w-full h-[500px] lg:p-10 p-4'>
           <img src={productDetail?.image} alt="" className='w-full h-full object-contain' />
       </div>
-      <div className='w-1/2 p-10'>
+      <div className='lg:w-1/2 w-full lg:p-10 p-5'>
           <div className=''>
               <div className='font-bold text-4xl'>{productDetail?.title}</div>
               <div className='bg-blue-600 text-white rounded-xl px-[4px] py-[2px] inline-block mt-2'>
@@ -93,7 +94,7 @@ const DetailComp = ({productDetail}) => {
 
               <div className='flex gap-2'>
                   <div className='w-full px-4 py-2 bg-gray-200 cursor-pointer
-                    rounded-lg text-xl text-center hover:bg-gray-300'
+                    rounded-lg text-xl text-center hover:bg-gray-300 flex items-center justify-center'
                     onClick={()=> {
                       addBasket();
                       toast.success("Ürün sepete eklendi.")

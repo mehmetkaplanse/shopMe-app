@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 const NavbarLeft = () => {
   return (
-    <Link to={"/"} className='text-6xl font-semibold'>
+    <Link to={"/"} className='sm:text-6xl text-3xl font-semibold'>
         ShopMe
     </Link>
   )

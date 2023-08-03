@@ -14,7 +14,7 @@ const Home = () => {
     <div className='mt-10 min-h-screen'>
       <SliderComp />
       <Sorting setSort={setSort}/>
-      <div className='flex'>
+      <div className='flex lg:flex-row flex-col lg:gap-0 gap-10'>
         <Category setCategory={setCategory} category={category}/>
         <Products category={category} sort={sort}/>
       </div>

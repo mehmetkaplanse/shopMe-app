@@ -26,7 +26,7 @@ const NavbarRight = () => {
   return (
     <div className='flex items-center gap-8'>
       <div className='relative'>
-        <div className='flex items-center gap-2 p-3 rounded-full bg-gray-200 border border-black'
+        <div className='sm:flex items-center hidden gap-2 p-3 rounded-full bg-gray-200 border border-black'
           onClick={() => setIsSearch(true)}>
             <input className='outline-none mx-2 bg-transparent' type="text" 
               placeholder='Arama yapınız...' onChange={(e) => setKeyword(e.target.value)} />
